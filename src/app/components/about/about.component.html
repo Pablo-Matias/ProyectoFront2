@@ -1,0 +1,9 @@
+<div id="about" class="card all-card" style="background-color:rgb(52, 207, 218) ;">   
+      <div class="d-flex">
+            <h1 style="color: rgb(6, 29, 236) ;">ESTE TITULO NO VA</h1>
+            <div >
+                  <app-editbutton *ngIf="login" (click)="abrirModal(persona.idpersona)" class="me-2"></app-editbutton> 
+            </div>
+      </div>
+      <p class="card-text">{{persona.acerca}}</p>
+</div>

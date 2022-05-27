@@ -1,0 +1,38 @@
+<app-banner>
+    
+</app-banner>
+<!-- <div class="d-flex " > -->
+    <!-- <div class="card all-card otro" id="first-card"> -->
+<div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">        
+        <div class="info">
+            <div class="info-img">
+                <div class="d-flex justify-content-end" style="background-color: blueviolet">
+                <app-editbutton id="fantasma" *ngIf="login" (click)="abrirModal(persona.idpersona)"class="me-2" style="background-color: red;"></app-editbutton>
+                </div>               
+                <img [src]="persona.fotourl"
+                    id="profile-img" alt="Foto de perfil de {{persona.nombre}}">
+            </div>
+            <!--<div class="btn-edit"><a href="" class="btn-right"><i class='bx bxs-edit-alt'></i></a></div>-->
+            <div class="info-text">
+                <h1 class="card-title">{{persona.nombre}} {{persona.apellido}}</h1>
+                <p class="card-text">{{persona.titulo}}</p>
+                <div id="info-contact" class="localidad grey">{{persona.ubicacion}}</div>
+                <!-- MOVER AL FUTER <span class="localidad" id="contacto"><a href="#">{{labelForContactLink}}</a> </span> -->
+                 <p class="card-text">{{persona.telefono}}</p>
+                 <p class="card-text">{{persona.email}}</p>
+
+            </div>
+            <div class="info-btns">
+                <button *ngIf="login" class="btn btn-primary" type="button" > ✏️</button>
+                <!--<button class="btn" type="button">Añadir sección</button>
+                <button class="btn" type="button">Más</button>-->
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+    <app-about>
+       
+    </app-about>
+</div>
+</div>

@@ -1,0 +1,11 @@
+<form [formGroup]="formulario" (ngSubmit)="guardarForm()">
+    
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Url Banner </span>
+        <input type="text" class="form-control" placeholder="agregar url nuevo banner" formControlName="coverurl" >
+    </div>
+
+    <div class="d-flex">
+        <button class="btn btn-primary me-3" >Guardar</button>
+        <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+    </div>    
