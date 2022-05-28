@@ -37,3 +37,9 @@ img.card-img-top {
 .otro{
     width: 100%;
 }
+
+.info-text {
+ color: black;
+ font-style: solid;
+ font-size: 200%;
+}
