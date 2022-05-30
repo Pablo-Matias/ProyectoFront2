@@ -3,3 +3,16 @@
     background-color: rgb(112, 180, 240);
     display: flex;
 }
+
+.M {
+font-style: cursive, italic ;
+    font-size:xx-large;
+}
+
+.tabla {
+    background-color: aliceblue;
+    margin: auto;
+    width: 50%;
+	height: 70px;
+    
+}
