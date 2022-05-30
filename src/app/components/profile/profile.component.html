@@ -17,16 +17,15 @@
                 <h1 class="card-title">{{persona.nombre}} {{persona.apellido}}</h1>
                 <p  class="card-text">{{persona.titulo}}</p>
                 <div id="info-contact" class="localidad grey">{{persona.ubicacion}}</div>
-                <!-- MOVER AL FUTER <span class="localidad" id="contacto"><a href="#">{{labelForContactLink}}</a> </span> -->
-                 <p class="card-text ekis">{{persona.telefono}}</p>
-                 <p class="card-text">{{persona.email}}</p>
+                 <p class="card-text ekis">📞{{persona.telefono}}</p>
+                 <p class="card-text">🗨{{persona.email}}</p>
 
             </div>
-            <div class="info-btns">
-                <button *ngIf="login" class="btn btn-primary" type="button" > ✏️</button>
-                <!--<button class="btn" type="button">Añadir sección</button>
-                <button class="btn" type="button">Más</button>-->
-            </div>
+            <!-- <div class="info-btns">
+                <button *ngIf="login" class="btn btn-primary" type="button" ><p>buenas</p> ✏️</button>
+                <>button class="btn" type="button">Añadir sección</>
+                <button class="btn" type="button">Más</button>
+            </div> -->
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
