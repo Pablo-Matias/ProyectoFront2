@@ -58,9 +58,8 @@ skills: any[] = [
 ]; 
 
 abrirModal(id:number){
-  //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal
-  const modalRef = this.modalService.open(SkillsModalComponent, { centered: true, size: 'sm' }   );   //{ centered: true }     
-  modalRef.componentInstance.id = id;      //pasa el id del elemento que quiero editar al componente del modal
+  const modalRef = this.modalService.open(SkillsModalComponent, { centered: true, size: 'sm' }); 
+  modalRef.componentInstance.id = id;     
   
   modalRef.result.then((data) => {
     this.ngOnInit();

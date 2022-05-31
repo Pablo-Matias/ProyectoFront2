@@ -34,17 +34,6 @@ export class IniciarSesionComponent implements OnInit {
   ngOnInit(): void {
   
   }
-
-  /*loginFalso() {
-      this.userService.login("olivia", "1234").subscribe(
-      data => {
-        this.persona = data;
-          localStorage.setItem("persona", JSON.stringify(this.persona));
-        this.volverAlHome();
-      }
-    );
-  }*/
-
   login() {
     this.userService.login( this.formulario.value.username, this.formulario.value.password).subscribe(
       data => {
